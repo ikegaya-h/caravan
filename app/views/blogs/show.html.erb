@@ -38,14 +38,20 @@
       <section class="blog-box">
             <h3 class="blog-box-headline">
               Hopeful lessons from the battle to save rainforests
+              <%= link_to @blog.title, "/blogs/#{@blog.id}" %>
+
             </h3>
 
             <div class="blog-box-content">
               <p class="category">
               Nature
+              <%= @blog.category %>
+
               </p>
               <p class="blog-date">
                 June 19, 2017
+              <%= @blog.created_at %>
+
           </p>
             </div>
 
@@ -66,6 +72,7 @@
           of the Amazon rain forest. There, it is pollinated by bees that<br>
           also visit orchids, and its seeds are spread by the agouti,<br>
           a small tree mammal.
+              <%= @blog.body %>
               </p>
 
           <a href="#">編集</a>
