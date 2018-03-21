@@ -10,14 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180314081330) do
+ActiveRecord::Schema.define(version: 20180321094451) do
 
-  create_table "blogs", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
-    t.string "category"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "blogs" because of following StandardError
+#   Unknown type 'tex' for column 'blog_image_id'
 
 end

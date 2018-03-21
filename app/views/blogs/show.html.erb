@@ -75,8 +75,8 @@
               <%= @blog.body %>
               </p>
 
-          <a href="#">編集</a>
-          <a href="#">削除</a>
+          <%= link_to "編集", edit_blog_path(@blog.id) %>
+          <%= link_to "削除", destroy_blog_path(@blog.id), method: :delete, "date-confirm" => "本当に削除しますか？" %>
 
           <div class="author_case clearfix">
             <div class="author_image"></div>
